@@ -4,14 +4,11 @@
    
 <body>
 <main class="Chat">
-    <ol class="Chat__history" id="chatHistory">
-        <li class="Chat__historyItem">Message 1</li>
-        <li class="Chat__historyItem">Message 2</li>
-        <li class="Chat__historyItem">Message 3</li>
-        <li class="Chat__historyItem">Message 4</li>
+    <ol class="Chat__history" id="history">
+        
     </ol>
     <form action="" class="Chat__form">
-        <input type="text" class="Chat__inputInitials" id="chatInitials">
+        <input type="text" maxlength="2" class="Chat__inputInitials" id="initials">
         <input type="text" class="Chat__inputMessage" id="message">
         <button class="Chat__cta">Send</button>
     </form>
@@ -21,6 +18,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="/socket.io/socket.io.js"></script>
 <script src="app.js"></script>
 
 </body>
